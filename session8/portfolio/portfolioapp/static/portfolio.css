@@ -1,0 +1,42 @@
+body {
+    background-color: #09503F;
+}
+.top{
+    color:yellow;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-end;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    color:yellow;
+}
+.title {
+    padding-top: 50px;
+    padding-left: 70px;
+    color:yellow;
+}
+.projects {
+    padding-left: 130px;
+    padding-top: 50px;
+    padding-right: 500px;
+    color: white;
+}
+.images {
+    padding-left: 50px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.description {
+    padding-left: 50px;
+    padding-right: 120px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}

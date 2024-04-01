@@ -1,0 +1,45 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet"type="text/css"href="{%static 'portfolio.css' %}"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link href='https://fonts.googleapis.com/css?family=BIZ UDMincho' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Arbutus' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Marko One' rel='stylesheet'>
+</head>
+<body>
+
+
+    <div style="font-family:'Marko One'; "class='top'>
+        <div style="font-size:30px;"class='jieun'>
+            <span>Jieun.</span>
+        </div>
+        <div style="font-size:18px;"class='nav'>
+            <a href="{% url 'home' %}">home</a>
+            <div>about</div>
+            <a href="{% url 'portfolio' %}">portfolio</a>
+            <div>contact</div>
+        </div>
+    </div>
+
+    <div style="font-size:30px;"class='title'>
+    <div style="font-family:'arbutus'; "class="port">Jieun's Portfolio</div>
+    </div>
+
+    <div class='projects'>
+        <div class='images'>
+            <div class="firstimg"><img src="{% static 'images/instagram.jpg' %}" alt="Instagram" width="200"></div>
+            <div class="secondimg"><img src="{% static 'images/toss.jpg' %}" alt="Toss" width="200"></div>
+        </div>
+        <div style="font-family:'Marko One'; "class='description'>
+            <div>Instagram Clone Coding</div>
+            <div>Toss Clone Coding</div>
+        </div>
+    </div>
+

@@ -1,0 +1,56 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet"type="text/css"href="{%static 'home.css' %}"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link href='https://fonts.googleapis.com/css?family=BIZ UDMincho' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Arbutus' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Marko One' rel='stylesheet'>
+</head>
+<body>
+
+
+    <div style="font-family:'Marko One'; "class='top'>
+        <div style="font-size:30px;"class='jieun'>
+            <span>Jieun.</span>
+        </div>
+        <div style="font-size:18px;"class='nav'>
+            <div>home</div>
+            <div>about</div>
+            <a href="{% url 'portfolio' %}">portfolio</a>
+            <div>contact</div>
+        </div>
+    </div>
+
+
+    <div class="introduce">
+        <div class="imgleft"><img src="static/images/JIEUN.jpg" alt="Jieun" width="250"></div>
+        <div class="introright">
+            <div style="font-family:'faustina'; "class="Hi">Hi there! I'm</div>
+            <div style="font-family:'arbutus'; "class="name">JIEUN PARK,</div>
+            <div style="font-family:'arbutus'; "class="int">@Korea University</div>
+            <div style="font-family:'arbutus'; "class="int">Major in Sinographic Literatures</div>
+            <div style="font-family:'arbutus'; "class="int">Studying Programming,</div>
+            <div style="font-family:'arbutus'; "class="int">UI Design, and Marketing</div>
+        </div>
+    </div>
+
+
+    <div class="bottom">
+        <span style="font-family: 'BIZ UDMincho';"class="left">
+            <div>JIEUN PARK</div>
+            <div>SEOUL-BASED</div>
+            <div>STUDYING IN KOREA UNIV.</div>
+        </span>
+        <span style="font-family: 'BIZ UDMincho';"class="right">2024.</span>
+    </div>
+
+
+</body>
+</html>
