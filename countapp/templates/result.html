@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'result.css' %}"/>
+    <title>Document</title>
+</head>
+<body>
+    <p>입력한 텍스트: {{text}}</p>
+    <p>글자수: {{total_len}}</p>
+    <p>공백제외 글자수: {{no_blank_len}}</p>
+    <p>단어수: {{word_count}}</p>
+</body>
+</html>
