@@ -1,0 +1,30 @@
+{% extends 'base.html' %} {% block title %} Detail!{% endblock %} {% block css%}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'detail.css' %}" />
+{% endblock %} {% block content %}
+<div class="detail-post_container">
+  <div class="detail_title">제목: {{context.post.title}}</div>
+  <div class="detail_content">내용: {{context.post.content}}</div>
+  <div class="detail-post_btn">
+    <p>작성자: {{ context.creator }}</p>
+    <a href="{% url 'home' %}">홈 화면</a>
+    <a href="{% url 'edit' context.post.pk %}">수정하기</a>
+    <a href="{% url 'delete' context.post.pk %}">삭제하기</a>
+  </div>
+  <div class="view">
+    <p>마지막 조회 시간: {{ context.last_viewed_at }}</p>
+    <p>마지막 조회자: {{ context.last_viewer }}</p>
+  </div>
+  <form action="" method="POST">
+    {% csrf_token %}
+    <input type="text" name="content" />
+    <button type="submit">댓글 작성</button>
+  </form>
+  {% for comment in context.post.comments.all %}
+  <li>
+    <span>{{comment.content}}</span>
+    <a href="{% url 'delete_comment' comment.pk %}">삭제</a>
+  </li>
+  {% endfor %}
+</div>
+{% endblock %}
